@@ -1,0 +1,173 @@
+/* start global */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+html {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	outline: 0;
+}
+
+button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 2.5em;
+}
+
+/* end global */
+
+/* start showcase */
+
+.showcase-container {
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+}
+
+.showcase-header {
+	margin-bottom: 20px;
+}
+
+.showcase-btn {
+	padding: 15px 35px;
+	background-color: #E8CD00;
+}
+
+/* end showcase*/
+
+/*start meal container*/
+
+.meal-container {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #F5F5F5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.meal-name {
+	line-height: 1;
+}
+
+.meal-category {
+	font-style: italic;
+	opacity: 0.6;
+}
+
+.ing-img-container {
+	display: flex;
+	min-width: 700px;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+.ingredients-container {
+	align-self: flex-start;
+}
+
+.ingredients-list {
+	padding-left: 39px;
+}
+
+
+.meal-img {
+	width: 300px;
+	height: auto;
+	align-self: flex-start;
+}
+
+.instructions-container {
+	width: 700px;
+	padding-top: 50px;
+}
+
+.instructions {
+	padding-left: 20px;
+}
+
+.header {
+	font-weight: bold;
+	/*font-style: italic;*/
+}
+
+
+
+/*end meal container*/
+
+/* start media queries */
+
+/* for phones */
+@media only screen and (max-width: 599px) {
+
+	/* global styles */
+	body {
+		background-color: #F5F5F5;
+	}
+
+	/* start meal container */
+	.meal-container {
+		width: 90vw;
+	}
+
+	.meal-name {
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	/* start ingredients/image container */
+
+	.ing-img-container {
+		flex-direction: column;
+		align-items: center;
+		min-width: 0;
+		padding-top: 30px;
+	}
+
+	.ingredients-container {
+		padding-top: 20px;
+		order: 1;
+	}
+
+	.meal-img {
+		order: 0;
+		width: 100%;
+	}
+	
+	/* end ingredients/image container*/
+
+	.instructions-container {
+		width: inherit;
+		padding-top: 20px;
+	}
+}
