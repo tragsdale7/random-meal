@@ -3,32 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Random Meal</title>
+	<title>Random Recipe</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-	<!-- <div class="showcase-container">
-		<h1 class='showcase-header'>Random Meal Generator</h1>
-		<button class='showcase-btn'>Start</button>
-	</div> -->
+	<div class="recipe">
+		<h3 class="recipe__name"></h3>
+		<p class="recipe__category-label label">
+			Category: <span class='recipe__category'></span>
+		</p>
 
-	<div class="meal-container">
-		<h3 class="meal-name"></h3>
-
-		<p class="meal-category">Category: <span id='category'></span></p>
-		
-		<div class="ing-img-container">
-			<div class="ingredients-container">
-				<p class='header'>Ingredients:</p>
-				<ul class='ingredients-list'></ul>
+		<div class="recipe__inner">
+			<div class="recipe__ingredients-container ">
+				<p class='recipe__ingredients-label label'>Ingredients:</p>
+				<ul class='recipe__ingredients'></ul>
 			</div>
-			<img class="meal-img" src=''></img>
+			<img class="recipe__img" src=''></img>
 		</div>
 
-		<div class="instructions-container">
-			<p class='header'>Instructions:</p>
-			<p class="instructions"></p>
+		<div class="recipe__instructions-container">
+			<p class='recipe__instructions-label label'>Instructions:</p>
+			<p class="recipe__instructions"></p>
 		</div>
+
+		<button class="recipe__btn">New Recipe</button>
 	</div>
 
 	<script type="text/javascript" src='main.js'></script>
